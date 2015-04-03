@@ -1,0 +1,37 @@
+ [
+      {
+        "id_episode":"1",
+        "id_catalog":"1",
+        "catalog":"raibarong",
+        "title":"episode #1",
+        "thumbnail":"r1.jpg",
+        "deskripsi":"Lorem ispum",
+        "path":"raibarong/episode",
+        "total":"25",
+        "datelog":"lorem"
+      },
+      {
+        "id_episode":"2",
+        "id_catalog":"1",
+        "catalog":"raibarong",
+        "title":"episode #2",
+        "thumbnail":"r2.jpg",
+        "deskripsi":"Lorem ispum",
+        "path":"raibarong/episode",
+        "total":"25",
+        "datelog":"lorem"
+      },
+      {
+        "id_episode":"3",
+        "id_catalog":"1",
+        "catalog":"raibarong",
+        "title":"episode #3",
+        "thumbnail":"1.jpg",
+        "deskripsi":"Lorem ispum",
+        "path":"raibarong/episode",
+        "total":"25",
+        "datelog":"lorem"
+      }
+      
+    
+]

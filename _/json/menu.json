@@ -1,0 +1,17 @@
+[
+  {
+    "title":"catalog",
+    "link":"catalog",
+    "icon":"star"
+  },
+  {
+    "title":"creator",
+    "link":"creator",
+    "icon":"magic"
+  },
+  {
+    "title":"market",
+    "link":"market",
+    "icon":"gift"
+  }
+]

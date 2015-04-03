@@ -1,0 +1,39 @@
+ <!-- slider --> 
+                 <div class="main-slider" ng-controller="SlideCtrl">
+	                 <div startslider></div>
+	              </div>
+               
+
+            <!-- container--> 
+            <div class="premium-page">
+             <div class="container" ng-controller="MarketCtrl">
+               <div class="row">
+                     <div class="kolom-10 sub-header"><div class="line"></div><h1>market</h1></div>
+                  
+                                   <div class="kolom-2" style="margin-top:20px;">
+                                   	<div class="select-style">
+                                     <form action="#" method="GET">
+										  <select ng-model="marketOrder">
+										    <option value="title">Newest</option>
+										    <option value="pharga">popular</option>
+										    <option value="title">A - Z</option>
+										    <option value="-title">Z - A</option>
+										  </select>
+                                    </form>
+                                    </div>
+                                   </div>
+                </div>
+                <div class="row" >  
+                     <div class="kolom-five" ng-repeat="market in markets | filter: query | orderBy: marketOrder:direction">
+                        <div class="new-shop"><img ng-src="_/img/shop/{{market.image}}" alt=""></div>
+                        <div class="title-shop">{{market.title}}</div>
+                        <div class="author-shop">Rp.{{market.harga}} ,-</div>
+                        <ngcart-addtocart id="item{{market.id_produk}}" name="{{market.title}}" price="{{market.harga}}" >Add to Cart</ngcart-addtocart>
+                     </div>
+                   <!-- scontainer -->      
+             </div>
+        
+
+            <!-- scontainer --> 
+           </div>   
+                 

@@ -1,0 +1,61 @@
+ <!-- slider --> 
+               <div class="main-slider" ng-controller="SlideCtrl">
+                 <div startslider></div>
+              </div>
+               
+
+
+
+            <!-- container--> 
+            <div class="premium-page">
+             <div class="container" ng-controller="CreatorCtrl">
+               <div class="row">
+                     <div class="kolom-10 sub-header"><div class="line"></div><h1> creator</h1></div>
+                 
+                                   <div class="kolom-2" style="margin-top:30px;">
+                                   	<div class="select-style">
+                                     <form action="#" method="GET">
+										  <select ng-model="creatorOrder">
+										    <option value="fullname">Newest</option>
+										    <option value="-grade">popular</option>
+										    <option value="fullname">A - Z</option>
+										    <option value="-fullname">Z - A</option>
+										  </select>
+                                    </form>
+                                    </div>
+                                   </div>
+                </div>
+                <div class="row" >
+                     
+                 <div class="kolom-five" ng-repeat="creator in creators | filter: query | orderBy: creatorOrder:direction">
+                 <a href="#/creator/details/{{creators.indexOf(creator)}}">
+	               <div class="new-premium">
+	               <img ng-src="_/img/creator/pic/{{creator.thumbnail}}" alt="{{creator.fullname}}">
+	               </div>
+	                <div class="author-premium">{{creator.fullname}}</div>
+	             </a>
+	           </div>
+                   <!-- scontainer -->      
+             </div>
+            
+               
+            <hr>
+
+               <div class="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="kolom-6">
+                            <h2>CREATE YOUR OWN STORY </h2>
+
+                        </div>
+                        <div class="kolom-6"><button class="btn-large">start now</button></div>
+                    </div>
+                </div>
+               </div>
+               <div class="bar-slide"></div>
+        
+
+              
+            <!-- scontainer --> 
+           </div>   
+                 

@@ -1,0 +1,233 @@
+
+<!-- HEADER --> 
+   <div class="head-viewer" ng-controller="MainCtrl">
+    <div class="logo"><a ng-href="#/"><img ng-src="_/img/logo.png" alt=""></a></div>
+    <div class="sb-toggle-right left"><i class="fa fa-bars"></i></div>   
+    <div class="title">
+      <div class="row">
+        <div class="kolom-2"> <a ng-href="#/viewer/wanara/episode/eps-2"><i class="fa fa-chevron-left"></i></a></div>
+        <div class="kolom-8"><h1>Wanara - Episode 3</h1></div>
+        <div class="kolom-2"> <a ng-href="#/"><i class="fa fa-chevron-right" style="color:#FF0066;"></i></a></div>
+      </div>
+    </div>
+     <div class="cart"><ngcart-summary></ngcart-summary></div>
+    <div class="search"><i class="fa fa-search"></i></div>
+    <div data-ng-show="logged" data-ng-disabled="!facebookReady" style="float:right;margin-right:20px;"> 
+      <img ng-src="https://graph.facebook.com/{{user.id}}/picture?width=54&height=54" class="user-avatar drop"/>
+      <div id="notificationContainer">
+      <div id="notificationTitle">Panels</div>
+      <div id="notificationsBody" class="notifications">
+
+        <ul>
+          <li><i class="fa fa-cloud-upload" style="font-size: 20px; width: 30px;"></i>
+            <a href="#/">
+              Upload
+            </a>
+              
+          </li>
+          <li><i class="fa fa-bookmark" style="font-size: 20px; width: 30px;"></i>
+            <a href="#/">
+              Reading List
+            </a>
+              
+          </li>
+          <li><i class="fa fa-money" style="font-size: 20px; width: 30px;"></i>
+            <a href="#/">
+              My wallet
+            </a>
+              
+          </li>
+          <li><i class="fa fa-cog" style="font-size: 20px; width: 30px;"></i>
+
+            <a href="#/">
+              Setting 
+            </a>
+              
+          </li>
+        </ul>
+      </div>
+      <div id="notificationFooter"><a data-ng-click="logout()" style="cursor:pointer;">LOGOUT</a></div>
+      </div>
+     <p style="color: rgb(255, 255, 255); font-weight: normal; float: left; margin-right: 10px; margin-top: 10px;"><a href="#/profile" style="color: rgb(255, 255, 255);">Hello. {{user.name}}</a></p>
+      </div>
+    </div>
+
+  <!-- END HEADER --> 
+
+             <!-- viewer list --> 
+
+             <div class="viewer-list" ng-controller="MainCtrl">
+               <ul id="viewer4" data-ng-show="logged" data-ng-disabled="!facebookReady">
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/1.jpg" alt="">
+                 <li> <img ng-src="_/img/premium/viewer/wanara/eps3/2.jpg" alt=""></li>
+                  <li> <img ng-src="_/img/premium/viewer/wanara/eps3/34.jpg" alt=""></li>
+                  
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/5.jpg" alt=""></li>
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/6.jpg" alt=""></li>
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/7.jpg" alt=""></li>
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/8.jpg" alt=""></li>
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/9.jpg" alt=""></li>
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/10.jpg" alt=""></li>
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/11.jpg" alt=""></li>
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/12.jpg" alt=""></li>
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/13.jpg" alt=""></li>
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/14.jpg" alt=""></li>
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/15.jpg" alt=""></li>
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/16.jpg" alt=""></li>
+                    <li> <img ng-src="_/img/premium/viewer/wanara/eps3/17.jpg" alt=""></li>
+                     <li> <img ng-src="_/img/premium/viewer/wanara/eps3/18.jpg" alt=""></li>
+                      <li> <img ng-src="_/img/premium/viewer/wanara/eps3/19.jpg" alt=""></li>
+                       <li> <img ng-src="_/img/premium/viewer/wanara/eps3/20.jpg" alt=""></li>
+                        <li> <img ng-src="_/img/premium/viewer/wanara/eps3/21.jpg" alt=""></li>
+                         <li> <img ng-src="_/img/premium/viewer/wanara/eps3/22.jpg" alt=""></li>
+                          <li> <img ng-src="_/img/premium/viewer/wanara/eps3/23.jpg" alt=""></li>
+                           <li> <img ng-src="_/img/premium/viewer/wanara/eps3/24.jpg" alt=""></li>
+                            <li> <img ng-src="_/img/premium/viewer/wanara/eps3/25.jpg" alt=""></li>
+                  
+               </ul>
+
+                <ul id="viewer4" data-ng-show="!logged" data-ng-disabled="facebookReady">
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/1.jpg" alt="">
+                 <li> <img ng-src="_/img/premium/viewer/wanara/eps3/2.jpg" alt=""></li>
+                  <li> <img ng-src="_/img/premium/viewer/wanara/eps3/34.jpg" alt=""></li>
+                  
+                   <li> <img ng-src="_/img/premium/viewer/wanara/eps3/5.jpg" alt=""></li>
+                   <li><div style="width:749px;height:50px;text-align:center;background:#ccc;color:#fff;text-transform:uppercase;font-size:14px;padding-top: 13px;margin:0 auto;"><a class="login" data-ng-click="IntentLogin()"  style="cursor:pointer;">Must Login to Continue</a></div></li>
+                </ul>
+            </div>
+
+            <div class="bar-viewer" ng-controller="ShareCtrl">
+              <div style="display:block;width:130px;margin:0 auto; font-size:30px;padding-top:10px;">
+                <a class="fa fa-facebook-square" href="" social-facebook><span class="hide"></span></a>
+                <a class="fa fa-twitter-square" href="" social-twitter><span class="hide"></span></a>
+                <a class="fa fa-google-plus-square" href="" social-gplus><span class="hide"></span></a>
+            <a class="fa fa-pinterest-square" href="" social-pinterest media="{{ demo.pinterestMediaUrl }}" description="An awesome description"><span class="hide"></span></a>
+              </div>
+            
+        
+       
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="kolom-8">
+                  <div class="comment-viewer">
+                     <div class="row">
+                          <div class="kolom-12 sub-header"><div class="line"></div><h1>COMMENTS</h1></div>
+                          <div class="kolom-12">
+                             <div class="fb-comments" data-href="http://kosmik.co.id/raibarong/episode/eps3.html" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
+                          </div>
+                     </div>
+                  </div>
+                </div>
+                <div class="kolom-4">
+                  <div class="ads-viewer"></div>
+                </div>
+              </div>
+              <hr style="margin-top:50px;">
+             <div class="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="kolom-6">
+                            <h2>CREATE YOUR OWN STORY </h2>
+
+                        </div>
+                        <div class="kolom-6"><button class="btn-large">start now</button></div>
+                    </div>
+                </div>
+               </div>
+               <div class="bar-slide"></div>
+
+               <div class="row">
+                 <div class="kolom-12 sub-header"><div class="line"></div><h1>related comics</h1></div>
+               </div>
+               <div class="row">
+                 <div class="kolom-five">
+                                        <div class="new-premium cs-style-3">
+                                            <figure>
+                                                <img ng-src="_/img/premium/thumb/2.jpg" alt="premium comics">
+                                              <figcaption>
+                                           
+                                                <div class="rating">
+                                                 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                              </div>
+                                               
+                                              </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="title-premium">EPISODE #20 - NEW MOON </div>
+                                        <div class="author-premium">raibarong</div>
+                                    </div>
+                                    <div class="kolom-five">
+                                        <div class="new-premium cs-style-3">
+                                            <figure>
+                                                <img ng-src="_/img/premium/thumb/2.jpg" alt="premium comics">
+                                              <figcaption>
+                                           
+                                                <div class="rating">
+                                                 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                              </div>
+                                               
+                                              </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="title-premium">EPISODE #20 - NEW MOON </div>
+                                        <div class="author-premium">raibarong</div>
+                                    </div>
+                                    <div class="kolom-five">
+                                        <div class="new-premium cs-style-3">
+                                            <figure>
+                                                <img ng-src="_/img/premium/thumb/2.jpg" alt="premium comics">
+                                              <figcaption>
+                                           
+                                                <div class="rating">
+                                                 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                              </div>
+                                               
+                                              </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="title-premium">EPISODE #20 - NEW MOON </div>
+                                        <div class="author-premium">raibarong</div>
+                                    </div>
+                                    <div class="kolom-five">
+                                        <div class="new-premium cs-style-3">
+                                            <figure>
+                                                <img ng-src="_/img/premium/thumb/2.jpg" alt="premium comics">
+                                              <figcaption>
+                                           
+                                                <div class="rating">
+                                                 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                              </div>
+                                               
+                                              </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="title-premium">EPISODE #20 - NEW MOON </div>
+                                        <div class="author-premium">raibarong</div>
+                                    </div>
+                                    <div class="kolom-five">
+                                        <div class="new-premium cs-style-3">
+                                            <figure>
+                                                <img ng-src="_/img/premium/thumb/2.jpg" alt="premium comics">
+                                              <figcaption>
+                                           
+                                                <div class="rating">
+                                                 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                              </div>
+                                               
+                                              </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="title-premium">EPISODE #20 - NEW MOON </div>
+                                        <div class="author-premium">raibarong</div>
+                                    </div>
+
+
+               </div>
+
+
+
+
+
+
+            </div>

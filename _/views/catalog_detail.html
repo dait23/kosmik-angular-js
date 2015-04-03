@@ -1,0 +1,262 @@
+
+
+<div ng-controller="CatalogDetailCtrl" ng-model="detailcatalogs" class="landing-banner" style="background:url(_/img/premium/landing/banner/{{detailcatalogs[whichItem].cover}})no-repeat center center ;background-size:cover;">
+    
+    <div class="title-landing">
+                    <div class="container">
+                       <div class="row">
+                         <div class="kolom-8">
+                           <h3>PREMIUM / COMICS</h3>
+                            <h1>{{detailcatalogs[whichItem].title}}</h1>
+                            <div class="linex"></div>
+                            <h4>{{detailcatalogs[whichItem].total}} episodes</h4>
+                           
+                         </div>
+                       </div>
+                       <div class="row">
+                         <div class="kolom-8 box-lantop">
+                           <div class="row"> 
+                             <div class="kolom-3"><img src="_/img/premium/landing/thumb/{{detailcatalogs[whichItem].avatar}}" alt="" class="landing-thumb"></div>
+                             <div class="kolom-9">
+                              <div class="pright">
+                                <div class="top">
+                                  <p>{{detailcatalogs[whichItem].deskripsi}}</p>
+                                </div>
+                                <div class="share">
+                                  <div class="row">
+                                    <div class="kolom-3"><i class="fa fa-eye"></i><span>2,344</span></div>
+                                    <div class="kolom-3"><i class="fa fa-heart"></i><span>2,344</span></div>
+                                    <div class="kolom-3"><i class="fa fa-plus"></i><span>2,344</span></div>
+                                  </div>
+                                </div>
+                                <div class="rating">
+                                  <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                              </div>
+                              </div>
+                               
+                             </div>
+                             
+                           </div>
+                           <div style="margin-left:140px;">
+                             <a ng-href="#/viewer/wanara/episode/eps-1" class="btn-follow">first episode</a>
+                             <a ng-href="#" class="btn-follow"><i class="fa fa-plus"></i> follow</a>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                  </div>  
+ 
+                 </div>
+
+               <!-- tabs --> 
+               <div ng-tabs>
+                <div class="bar-tab" id="bar-tab"> 
+                  <div class="sb-toggle-left left"><img src="_/img/premium/icon/{{detailcatalogs[whichItem].icon}}" alt="" style="width: 50px; margin-top: -14px; margin-left: 17px;"></div>
+                  <div class="container">
+                    <div class="row">
+                      <div  class="kolom-12 tabs">
+                        <ul class="tabs-links" style="width:790px;margin:0 auto;">
+
+                             <li ng-tab-head="on">
+                                <a href="#" ng-click="$event.preventDefault()">chapters</a>
+                            </li>
+                            <li ng-tab-head>
+                                <a href="#" ng-click="$event.preventDefault()">story</a>
+                            </li>
+                            <li ng-tab-head>
+                                <a href="#" ng-click="$event.preventDefault()">character </a>
+                            </li>
+                             <li ng-tab-head>
+                                <a href="#" ng-click="$event.preventDefault()">creator </a>
+                            </li>
+                             <li ng-tab-head>
+                                <a href="#" ng-click="$event.preventDefault()">review</a>
+                            </li>
+                             <li ng-tab-head>
+                                <a href="#" ng-click="$event.preventDefault()">MERCHANDISe </a>
+                            </li>
+                          </ul>
+                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div class="container">
+                    <div class="row">
+                      <div class="kolom-12">
+                        
+                        <div class="tabs-content">
+                                <div ng-tab-body class="tab">
+                                    <div class="container">
+                                        <div class="row">
+                                             <div class="kolom-12 sub-header"><div class="line"></div><h1>NEW chapter</h1></div>
+                                             <div ng-controller="BarongCtrl">
+                                             <div class="kolom-five" ng-repeat="barong in barongs">
+                                <a ng-href="#/viewer/wanara/episode/eps-1">
+								               <div class="new-premium">
+								                  <img ng-src="_/img/premium/thumb/{{barong.thumbnail}}" alt="{{barong.title}}">
+								                </div>
+								                <div class="title-premium">{{barong.title}} </div>
+								                <div class="author-premium">{{barong.catalog}}</div>
+								           </div>
+                           </a>
+								           </div>
+
+                                          
+
+                                        </div>
+                                         <hr style="margin-top:50px;">
+                                     </div>
+                                         <div class="banner">
+							                <div class="container">
+							                    <div class="row">
+							                        <div class="kolom-6">
+							                            <h2>CREATE YOUR OWN STORY </h2>
+
+							                        </div>
+							                        <div class="kolom-6"><button class="btn-large">start now</button></div>
+							                    </div>
+							                </div>
+							               </div>
+							               <div class="bar-slide"></div>
+
+
+                                     <div class="row">
+                                     	 <div class="kolom-12 sub-header"><div class="line"></div><h1> MERCHANDISE</h1></div>
+                                     </div>
+                                     <div class="row"  ng-controller="MarketCtrl">  
+						                    <div class="kolom-five" ng-repeat="market in markets">
+                        <div class="new-shop"><img ng-src="_/img/shop/{{market.image}}" alt=""></div>
+                        <div class="title-shop">{{market.title}}</div>
+                        <div class="author-shop">Rp.{{market.harga}} ,-</div>
+                        <ngcart-addtocart id="item{{market.id_produk}}" name="{{market.title}}" price="{{market.harga}}" >Add to Cart</ngcart-addtocart>
+                     </div>
+						                   <!-- scontainer -->      
+						             </div>
+
+                                </div>
+                                <div ng-tab-body class="tab">
+                                   <div class="container">
+                                   	<div class="row">
+	                                  <div class="kolom-12 sub-header"><div class="line"></div><h1>story</h1></div>
+	                                  <div class="kolom-12 story-right" style="margin-left:0px;">
+	                                		<p >{{detailcatalogs[whichItem].story}}</p>
+	                                	</div>
+	                                </div>
+	                  
+	                      
+                                   </div>
+                                </div>
+                                <div ng-tab-body class="tab">
+                                      <div class="container">
+                                   	<div class="row">
+	                                  <div class="kolom-12 sub-header"><div class="line"></div><h1>character</h1></div>
+	                                  <div class="kolom-12 story-right" style="margin-left:0px;">
+	                                		<p >{{detailcatalogs[whichItem].character}}</p>
+	                                	</div>
+	                                </div>
+	                  
+	                      
+                                   </div>
+                                </div>
+                                <div ng-tab-body class="tab">
+                                       <div class="container">
+                                   	<div class="row">
+	                                  <div class="kolom-12 sub-header"><div class="line"></div><h1>creator</h1></div>
+	                                  <div class="kolom-12 story-right" style="margin-left:0px;">
+	                                  	<div class="title">{{detailcatalogs[whichItem].creator}}</div>
+	                                		<p >
+	                                			 Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+	                                		</p>
+	                                	</div>
+	                                </div>
+	                  
+	                      
+                                   </div>
+                                </div>
+                                <div ng-tab-body class="tab">
+                                   <div class="container">
+                                   	    <div class="row">
+                                      <div class="kolom-12 sub-header"><div class="line"></div><h1>reviews</h1></div>
+                                    </div> 
+                                   </div>
+                                   <div class="row">
+                                   	<div class="kolom-4">
+                                  <div class="box-review2">
+                                     <div class="row">
+                                       <div class="kolom-3 user"><img src="_/img/review/thumb/1.jpg" alt="" class="avatar-review"></div>
+                                       <div class="kolom-9 detail">
+                                         <div class="title">Zaphotoworks |</div>
+                                         <div class="rating">
+                                          <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                                      </div> 
+                                      <p>
+                                        Nice Comic..but I need more episode :D
+                                      </p>
+                                       </div>
+                                     </div>
+                                  </div>
+                                </div>
+                                <div class="kolom-4">
+                                  <div class="box-review2">
+                                     <div class="row">
+                                       <div class="kolom-3 user"><img src="_/img/review/thumb/1.jpg" alt="" class="avatar-review"></div>
+                                       <div class="kolom-9 detail">
+                                         <div class="title">Zaphotoworks |</div>
+                                         <div class="rating">
+                                          <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                                      </div> 
+                                      <p>
+                                        Nice Comic..but I need more episode :D
+                                      </p>
+                                       </div>
+                                     </div>
+                                  </div>
+                                </div>
+                                <div class="kolom-4">
+                                  <div class="box-review2">
+                                     <div class="row">
+                                       <div class="kolom-3 user"><img src="_/img/review/thumb/1.jpg" alt="" class="avatar-review"></div>
+                                       <div class="kolom-9 detail">
+                                         <div class="title">Zaphotoworks |</div>
+                                         <div class="rating">
+                                          <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                                      </div> 
+                                      <p>
+                                        Nice Comic..but I need more episode :D
+                                      </p>
+                                       </div>
+                                     </div>
+                                  </div>
+                                </div>
+                                   </div>
+                                </div>
+                                <div ng-tab-body class="tab">
+                                   <div class="container">
+                                   	   <div class="row">
+	                                     <div class="kolom-12 sub-header"><div class="line"></div><h1>MERCHANDISE</h1></div>
+	                                   </div>
+
+	                                    <div class="row"  ng-controller="MarketCtrl">  
+						                     <div class="kolom-five" ng-repeat="market in markets">
+                        <div class="new-shop"><img ng-src="_/img/shop/{{market.image}}" alt=""></div>
+                        <div class="title-shop">{{market.title}}</div>
+                        <div class="author-shop">Rp.{{market.harga}} ,-</div>
+                        <ngcart-addtocart id="item{{market.id_produk}}" name="{{market.title}}" price="{{market.harga}}" >Add to Cart</ngcart-addtocart>
+                     </div>
+						                   <!-- scontainer -->      
+						             </div>
+
+                                   </div>
+                                </div>
+                            </div>
+                       
+                     </div>
+                 
+                 
+
+                  </div>
+                  </div>
+                  </div>
+
+

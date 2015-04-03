@@ -1,0 +1,69 @@
+ 
+ <!-- slider --> 
+               <div class="main-slider" ng-controller="SlideCtrl">
+                 <div startslider></div>
+              </div>
+               
+
+
+
+            <!-- container--> 
+            <div class="premium-page">
+             <div class="container" ng-controller="CatalogCtrl">
+               <div class="row">
+                     <div class="kolom-10 sub-header"><div class="line"></div><h1> catalogs</h1></div>
+                      
+                                   <div class="kolom-2" style="margin-top:25px;">
+                                   	<div class="select-style">
+                                     <form action="#" method="GET">
+										  <select ng-model="catalogOrder">
+										    <option value="-id_catalog">Newest</option>
+										    <option value="popular">popular</option>
+										    <option value="title">A - Z</option>
+										    <option value="-title">Z - A</option>
+										  </select>
+                                    </form>
+                                    </div>
+                                   </div>
+                </div>
+                <div class="row">
+                     <div class="kolom-3" ng-repeat="catalog in catalogs | filter: query | orderBy: catalogOrder:direction">
+                       <div class="premium cs-style-3">
+                          <figure>
+                                <img ng-src="_/img/premium/thumb/{{catalog.thumbnail}}" alt="{{catalog.title}}">
+                              <figcaption>
+                                <h3>{{catalog.title}}</h3>
+                                <span>{{catalog.creator}}</span>
+                                <div class="rating">
+                                 <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                              </div>
+                               <a href="#/catalog/{{catalogs.indexOf(catalog)}}">Read more</a>
+                              </figcaption>
+                            </figure>
+                       </div>
+                     </div>
+                    
+                   <!-- scontainer -->      
+             </div>
+              
+               
+            <hr>
+
+               <div class="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="kolom-6">
+                            <h2>CREATE YOUR OWN STORY </h2>
+
+                        </div>
+                        <div class="kolom-6"><button class="btn-large">start now</button></div>
+                    </div>
+                </div>
+               </div>
+               <div class="bar-slide"></div>
+        
+
+              
+            <!-- scontainer --> 
+           </div>   
+                 

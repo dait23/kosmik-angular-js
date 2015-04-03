@@ -1,0 +1,16 @@
+[
+  {
+    "id_slider":"1",
+    "title":"Wanara",
+    "link":"#1",
+    "image":"_/img/slider/4.jpg",
+    "datelog":"lorem"
+  },
+  {
+    "id_slider":"2",
+    "title":"raibarong",
+    "link":"#2",
+    "image":"_/img/slider/3.jpg",
+    "datelog":"lorem"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+  	"id_produk":"1",
+  	"id_catalog":"1",
+    "title":"batman action figure",
+    "image":"1.jpg",
+    "deskripsi":"lorem lorem ispum",
+    "kategori":"kaos",
+    "harga":"100000"
+  },
+  {
+    "id_produk":"2",
+  	"id_catalog":"2",
+    "title":"Kaos raibarong",
+    "image":"raibarong.jpg",
+    "deskripsi":"lorem lorem ispum",
+    "kategori":"kaos",
+    "harga":"100000"
+  },
+  {
+    "id_produk":"3",
+  	"id_catalog":"1",
+    "title":"kaos wanara",
+    "image":"wanara.jpg",
+    "deskripsi":"lorem lorem ispum",
+    "kategori":"kaos",
+    "harga":"100000"
+  },
+  {
+    "id_produk":"4",
+    "id_catalog":"2",
+    "title":"batman action figure",
+    "image":"1.jpg",
+    "deskripsi":"lorem lorem ispum",
+    "kategori":"kaos",
+    "harga":"100000"
+  },
+  {
+    "id_produk":"5",
+    "id_catalog":"2",
+    "title":"batman action figure",
+    "image":"1.jpg",
+    "deskripsi":"lorem lorem ispum",
+    "kategori":"kaos",
+    "harga":"100000"
+  }
+]

@@ -1,0 +1,83 @@
+<!-- slider -->
+
+        <div class="main-slider" ng-controller="SlideCtrl">
+           <div startslider></div>
+        </div>
+
+      <!-- end slider -->
+
+      <div class="container" ng-controller="NewepisodeCtrl">
+        <div class="row">
+          <div class="kolom-12 sub-header"><div class="line"></div><h1>NEW THIS WEEK</h1></div>
+
+          <div class="kolom-five" ng-repeat="newepisode in newepisodes">
+            <a ng-href="#/viewer/wanara/episode/eps-1">
+               <div class="new-premium">
+                  <img ng-src="_/img/premium/thumb/{{newepisode.thumbnail}}" alt="{{newepisode.title}}">
+                </div>
+                <div class="title-premium">{{newepisode.title}} </div>
+                <div class="author-premium">{{newepisode.catalog}}</div>
+           </div>
+          </a>
+          
+        </div>
+        <div class="row" ng-controller="LastepisodeCtrl">
+           <div class="kolom-12 sub-header"><div class="line"></div><h1>last WEEK</h1></div>
+            <div class="kolom-five" ng-repeat="lastepisode in lastepisodes | limitTo: 5">
+               <div class="new-premium">
+                  <img ng-src="_/img/premium/thumb/{{lastepisode.thumbnail}}" alt="{{lastepisode.title}}">
+                </div>
+                <div class="title-premium">{{lastepisode.title}} </div>
+                <div class="author-premium">{{lastepisode.catalog}}</div>
+           </div>
+          
+        </div>
+        
+        <hr>
+        <div class="row">
+          <div class="kolom-12 sub-header"><div class="line"></div><h1>new comics</h1><span class="see-all"><a href="#/catalog">See all <i class="fa fa-angle-double-right"></i></a></span></div>
+        </div>
+        
+        <div class="row"  ng-controller="NewCatalogCtrl">
+          <div class="kolom-3" ng-repeat="item in newcatalogs">
+              <div class="premium cs-style-3">
+                  <figure>
+                    <img ng-src="_/img/premium/thumb/{{item.thumbnail}}" alt="{{item.title}}">
+                    <figcaption>
+                      <h3>{{item.title}}</h3>
+                      <span>{{item.creator}}</span>
+                      <div class="rating">
+                      <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                      </div>
+                      <a href="#/catalog/{{newcatalogs.indexOf(item)}}">Read more</a>
+                    </figcaption>
+                  </figure>
+              </div>
+          </div>
+         
+    
+        </div>
+
+      </div>
+
+       <div class="bar"></div>
+         <div class="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="kolom-6">
+                            <h2>CREATE YOUR OWN STORY </h2>
+
+                        </div>
+                        <div class="kolom-6"><button class="btn-large">start now</button></div>
+                    </div>
+                </div>
+               </div>
+               <div class="bar-slide"></div> 
+<div class="bannerads">
+                <div class="container">
+                    <div class="row">
+                        <div class="kolom-12"><img src="_/img/banner/apps.png" alt="" width="70%"></div>
+                    </div>
+                </div>
+                
+            </div>

@@ -1,0 +1,103 @@
+[
+  {
+    "id_creator":"1",
+    "id_catalog":"2",
+    "id_user":"1",
+    "fullname":"sweta kartika",
+    "bio":"Lorem ispumLorem ispumLorem ispumLorem ispumLorem ispum Lorem ispum",
+    "cover":"",
+    "grade":"9.2",
+    "thumbnail":"sweta.jpg"
+  },
+  {
+    "id_creator":"2",
+    "id_catalog":"1",
+    "id_user":"2",
+    "fullname":"alex irzaqi",
+    "bio":"Lorem ispumLorem ispumLorem ispumLorem ispumLorem ispum Lorem ispum",
+    "cover":"",
+    "grade":"9.2",
+    "thumbnail":"irzaqi.jpg"
+  },
+  {
+    "id_creator":"3",
+    "id_catalog":"3",
+    "id_user":"3",
+    "fullname":"Okto",
+    "bio":"Lorem ispumLorem ispumLorem ispumLorem ispumLorem ispum Lorem ispum",
+    "cover":"",
+    "grade":"8.2",
+    "thumbnail":"okto.jpg"
+  },
+   {
+    "id_creator":"4",
+    "id_catalog":"3",
+    "id_user":"4",
+    "fullname":"Lorem Ispum",
+    "bio":"Lorem ispumLorem ispumLorem ispumLorem ispumLorem ispum Lorem ispum",
+    "cover":"",
+    "grade":"7.2",
+    "thumbnail":"matto.jpg"
+  },
+   {
+    "id_creator":"2",
+    "id_catalog":"1",
+    "id_user":"2",
+    "fullname":"Lorem Ispum",
+    "bio":"Lorem ispumLorem ispumLorem ispumLorem ispumLorem ispum Lorem ispum",
+    "cover":"",
+    "grade":"6.2",
+    "thumbnail":"avatar.jpg"
+  },
+   {
+    "id_creator":"2",
+    "id_catalog":"1",
+    "id_user":"2",
+    "fullname":"Lorem Ispum",
+    "bio":"Lorem ispumLorem ispumLorem ispumLorem ispumLorem ispum Lorem ispum",
+    "cover":"",
+    "grade":"7.2",
+    "thumbnail":"avatar.jpg"
+  },
+   {
+    "id_creator":"2",
+    "id_catalog":"1",
+    "id_user":"2",
+    "fullname":"Lorem Ispum",
+    "bio":"Lorem ispumLorem ispumLorem ispumLorem ispumLorem ispum Lorem ispum",
+    "cover":"",
+     "grade":"7.2",
+    "thumbnail":"avatar.jpg"
+  },
+   {
+    "id_creator":"2",
+    "id_catalog":"1",
+    "id_user":"2",
+    "fullname":"Lorem Ispum",
+    "bio":"Lorem ispumLorem ispumLorem ispumLorem ispumLorem ispum Lorem ispum",
+    "cover":"",
+     "grade":"7.2",
+    "thumbnail":"avatar.jpg"
+  },
+   {
+    "id_creator":"2",
+    "id_catalog":"1",
+    "id_user":"2",
+    "fullname":"Lorem Ispum",
+    "bio":"Lorem ispumLorem ispumLorem ispumLorem ispumLorem ispum Lorem ispum",
+    "cover":"",
+     "grade":"7.2",
+    "thumbnail":"avatar.jpg"
+  },
+   {
+    "id_creator":"2",
+    "id_catalog":"1",
+    "id_user":"2",
+    "fullname":"Lorem Ispum",
+    "bio":"Lorem ispumLorem ispumLorem ispumLorem ispumLorem ispum Lorem ispum",
+    "cover":"",
+     "grade":"7.2",
+    "thumbnail":"avatar.jpg"
+  }
+
+]
